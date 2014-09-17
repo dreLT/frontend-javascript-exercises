@@ -15,5 +15,5 @@ module.exports.findLastMatch = function(text, searchString) {
 };
 
 module.exports.substringBetweenMatches = function(text, searchString) {
-  return text.substring(text.indexOf(searchString) + 3, text.lastIndexOf(searchString))
+  return text.substring(text.indexOf(searchString) + searchString.length, text.lastIndexOf(searchString))
 };
