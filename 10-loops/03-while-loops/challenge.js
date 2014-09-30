@@ -1,4 +1,4 @@
-module.exports.stream = function(conditionalFn, actionFn) {
+module.exports.stream = function(conditionalFn, actionFn) }
   while (conditionalFn() === true) {
     actionFn();
   }
