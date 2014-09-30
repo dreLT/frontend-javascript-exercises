@@ -1,8 +1,6 @@
 module.exports.stream = function(conditionalFn, actionFn) {
-  //conditionalFn;
   while (conditionalFn() === true) {
     actionFn();
-    //conditionalFn;
   }
 };
 
